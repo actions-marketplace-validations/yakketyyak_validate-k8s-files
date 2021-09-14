@@ -1,0 +1,61 @@
+
+PASS - test_action/elasticsearch/deployment.yml contains a valid ConfigMap (es-env)
+PASS - test_action/elasticsearch/deployment.yml contains a valid StatefulSet (elastic)
+
+
+PASS - test_action/elasticsearch/secret.yaml contains a valid Secret (db-credentials)
+PASS - test_action/elasticsearch/secret.yaml contains a valid Secret (redis-credentials)
+PASS - test_action/elasticsearch/secret.yaml contains a valid Secret (es-credentials)
+PASS - test_action/elasticsearch/secret.yaml contains a valid Secret (api-credentials)
+PASS - test_action/elasticsearch/secret.yaml contains a valid Secret (email-credentials)
+
+
+PASS - test_action/elasticsearch/service.yml contains a valid Service (es-service)
+
+
+PASS - test_action/myswa-api/deployment.yml contains a valid Deployment (myswa-api)
+
+
+PASS - test_action/myswa-api/elasticsearch/deployment.yml contains a valid ConfigMap (es-env)
+PASS - test_action/myswa-api/elasticsearch/deployment.yml contains a valid StatefulSet (elastic)
+
+
+ERR  - test_action/myswa-api/elasticsearch/elasticsearch/deployment.yml: Failed initializing schema https://kubernetesjsonschema.dev/master-standalone/configmapt-v1.json: Could not read schema from HTTP, response status is 404 Not Found
+
+
+PASS - test_action/myswa-api/elasticsearch/elasticsearch/service.yml contains a valid Service (es-service)
+
+
+PASS - test_action/myswa-api/elasticsearch/secret.yml contains a valid Secret (db-credentials)
+PASS - test_action/myswa-api/elasticsearch/secret.yml contains a valid Secret (redis-credentials)
+PASS - test_action/myswa-api/elasticsearch/secret.yml contains a valid Secret (es-credentials)
+PASS - test_action/myswa-api/elasticsearch/secret.yml contains a valid Secret (api-credentials)
+PASS - test_action/myswa-api/elasticsearch/secret.yml contains a valid Secret (email-credentials)
+
+
+PASS - test_action/myswa-api/elasticsearch/service.yml contains a valid Service (es-service)
+
+
+PASS - test_action/myswa-api/secret.yml contains a valid Secret (db-credentials)
+PASS - test_action/myswa-api/secret.yml contains a valid Secret (redis-credentials)
+PASS - test_action/myswa-api/secret.yml contains a valid Secret (es-credentials)
+PASS - test_action/myswa-api/secret.yml contains a valid Secret (api-credentials)
+PASS - test_action/myswa-api/secret.yml contains a valid Secret (email-credentials)
+
+
+PASS - test_action/myswa-api/service.yml contains a valid Service (myswa-api-service)
+
+
+PASS - test_action/redis/deployment.yml contains a valid StatefulSet (redis)
+
+
+PASS - test_action/redis/service.yml contains a valid Service (redis-service)
+
+
+PASS - test_action/secret.yaml contains a valid Secret (db-credentials)
+PASS - test_action/secret.yaml contains a valid Secret (redis-credentials)
+PASS - test_action/secret.yaml contains a valid Secret (es-credentials)
+PASS - test_action/secret.yaml contains a valid Secret (api-credentials)
+PASS - test_action/secret.yaml contains a valid Secret (email-credentials)
+
+
