@@ -33,6 +33,11 @@ jobs:
         name: ${{ steps.k8s.outputs.report }}
         path: ${{ steps.k8s.outputs.report }}
 ```
+
+## Ouput
+
+![result](https://github.com/yakketyyak/validate-k8s-files/blob/master/output/view_icon.png) [See build image and sample report](https://github.com/yakketyyak/validate-k8s-files/blob/master/output)
+
 ## License
 
 The scripts and documentation in this project are released under the [Apache License 2.0](https://github.com/yakketyyak/validate-k8s-files/blob/master/LICENSE)
