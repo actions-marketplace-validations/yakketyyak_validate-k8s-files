@@ -1,0 +1,26 @@
+name: 'Validate kubernetes files'
+author: "Gnongo Patrick BEUGRE <<pt.beugre@gmail.com>>"
+branding:
+  icon: 'check-circle'
+  color: 'blue'
+description: 'Validate Kubernetes files - GitHub Actions'
+inputs:
+
+  files:
+    description: 'Files or directories to validate'
+    required: true
+    default: '.'
+
+  report_name:
+    description: 'The name of output file'
+    required: false
+    default: 'report'
+
+outputs:
+  report:
+    description: 'The output file with kubeval results'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.files }}
